@@ -1,0 +1,10 @@
+Variable,Definition,ADF_Result,Decision,Justification
+depreciation,log(ER_t) - log(ER_{t-1}),Stasioner I(0) di level untuk semua negara,Dipertahankan dalam level (tidak perlu differencing),Hasil ADF menunjukkan stasioner di level untuk semua negara
+corr_inv_l1,"Corruption index (inverted CPI), lag 1 year","Campuran: Indonesia I(1), Thailand & Malaysia I(0)",Pakai level lagged dengan caveat: risiko unit root dikurangi oleh FE dan dummy krisis,"Indeks dibatasi dalam range tertentu, tertarik pada level korupsi, bukan perubahan tahunan"
+infl_diff_l1,"Inflation differential, lag 1 year",Umumnya stasioner di level,Pakai level lagged tanpa modifikasi,Hasil ADF menunjukkan stasioner di level
+gdp_growth_l1,"GDP growth (%), lag 1 year",Umumnya stasioner di level,Pakai level lagged tanpa modifikasi,Hasil ADF menunjukkan stasioner di level
+ca_gdp_l1,"Current account balance (% of GDP), lag 1 year",Indikasi unit root di sebagian negara,Model utama: level lagged. Robustness: Δca_gdp_l1,Interpretasi ekonomi jelas: posisi eksternal. Robustness dengan differencing
+reserves_moi_l1,"Total reserves in months of imports, lag 1 year",Indikasi unit root di sebagian negara,Model utama: level lagged. Robustness: Δreserves_moi_l1,Interpretasi ekonomi jelas: buffer cadangan. Robustness dengan differencing
+AFC_97_98,Asian Financial Crisis dummy (1997-1998),Dummy variable,"Masuk model final (signifikan, R² naik besar)",Secara statistik signifikan dan ekonomi masuk akal sebagai shock bersama
+GFC_08_09,Global Financial Crisis dummy (2008-2009),Dummy variable,"Masuk model final (signifikan, R² naik besar)",Secara statistik signifikan dan ekonomi masuk akal sebagai shock bersama
+COVID_20_22,COVID-19 Pandemic dummy (2020-2022),Dummy variable,"Masuk model final (signifikan, R² naik besar)",Secara statistik signifikan dan ekonomi masuk akal sebagai shock bersama

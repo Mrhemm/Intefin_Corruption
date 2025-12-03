@@ -1,0 +1,3 @@
+Test,Statistic,P_value,Interpretation
+Breusch-Pagan,1.4679250290645958,0.9167413124900384,Homoskedastisitas
+Durbin-Watson,1.8160911398512434,,No autocorrelation
